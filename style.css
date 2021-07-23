@@ -25,6 +25,10 @@ html * {
     display: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 
 /* ----------- NAV ----------- */
 nav {
@@ -53,21 +57,32 @@ ul {
     height: 0; overflow: hidden;
 }
 
-h1, h2 {
+h1, h2, h3 {
 font-weight: var(--normal);
 text-align: center;
+color: var(--darkBlue);
 }
 
 h1 {
     margin: 8% 0;
     font-size: 3rem;
     line-height: 125%;
-    color: var(--darkBlue);
+}
+
+h2 {
+    margin: 5% 0;
+    font-size: 2.2rem;
+}
+
+h3 {
+    margin: 8% 0;
+    font-size: 1.5rem;
 }
 
 p { 
     color: var(--grayishBlue);
-    text-align: justify;
+    text-align: center;
+    line-height: 120%;
 }
 
 /* ----------------- Header --------------- */
@@ -104,8 +119,29 @@ p {
     color: var(--white);
     }
 
-    /* ----------------------- MAIN -------------------- */
+    .desc {
+        text-align: justify;
+    }
+    /* ----------- ADVANTAGES ----------- */
+    .advantages {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 15% 10%;
+        background: var(--lightGrayishBlue);
+    }
 
-    main {
-        padding: 0 10%;
+    .advantage {
+        margin: 5% 0;
+    }
+
+    .advantage-desc {
+        margin-bottom: 5%;
+    }
+
+    .advantage-img {
+        display: block;
+        margin: 5% auto;
     }
