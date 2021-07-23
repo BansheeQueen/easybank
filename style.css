@@ -15,5 +15,44 @@
 --bold: 700;
 }
 
-.desktop {display: none;}
-ul {height: 0; overflow: hidden;}
+html * {
+    box-sizing: border-box;
+}
+
+.desktop {
+    display: none;
+}
+
+
+/* ----------- NAV ----------- */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding: 20px 20px 25px 20px;
+    background: var(--white);
+}
+
+.logo {
+    height: 20px;
+}
+
+.toggle-nav {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.toggle-nav img {height: 15px;}
+
+ul {
+    height: 0; overflow: hidden;
+}
+
+
+/* ----------------- Header --------------- */
+    .header-request {
+        margin-top: 60px;
+    }
