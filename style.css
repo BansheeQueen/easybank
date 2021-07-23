@@ -14,3 +14,6 @@
 --normal: 400;
 --bold: 700;
 }
+
+.desktop {display: none;}
+ul {height: 0; overflow: hidden;}
