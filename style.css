@@ -17,6 +17,8 @@
 
 html * {
     box-sizing: border-box;
+    font-family: var(--publicSans);
+    font-size: var(--fontSize);
 }
 
 .desktop {
@@ -51,8 +53,59 @@ ul {
     height: 0; overflow: hidden;
 }
 
+h1, h2 {
+font-weight: var(--normal);
+text-align: center;
+}
+
+h1 {
+    margin: 8% 0;
+    font-size: 3rem;
+    line-height: 125%;
+    color: var(--darkBlue);
+}
+
+p { 
+    color: var(--grayishBlue);
+    text-align: justify;
+}
 
 /* ----------------- Header --------------- */
+    header {
+        background-image: url(images/bg-intro-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: var(--veryLightGray);
+    }
+
     .header-request {
+        display: inline-flex;
+        flex-direction: column;
         margin-top: 60px;
+        width: 100%;
+    }
+
+    .mockups-image {
+        margin: -20% auto 0 auto;
+        max-width: 100%;
+    }
+
+    .request-container {
+        padding: 5% 10%;
+        background-color: var(--veryLightGray);
+    }
+
+    .request-btn {
+    display: block;
+    background: linear-gradient(119deg, var(--limeGreen), var(--brightCyan));
+    padding: 12px 30px;
+    margin: 30px auto;
+    border-radius: 20px;
+    color: var(--white);
+    }
+
+    /* ----------------------- MAIN -------------------- */
+
+    main {
+        padding: 0 10%;
     }
