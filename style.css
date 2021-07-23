@@ -64,19 +64,21 @@ color: var(--darkBlue);
 }
 
 h1 {
-    margin: 8% 0;
+    margin: 30px 0;
     font-size: 3rem;
     line-height: 125%;
 }
 
 h2 {
-    margin: 5% 0;
+    margin: 25px 0;
     font-size: 2.2rem;
+    line-height: 120%;
 }
 
 h3 {
-    margin: 8% 0;
+    margin: 20px 0;
     font-size: 1.5rem;
+    line-height: 115%;
 }
 
 p { 
@@ -106,7 +108,7 @@ p {
     }
 
     .request-container {
-        padding: 5% 10%;
+        padding: 10px 10%;
         background-color: var(--veryLightGray);
     }
 
@@ -129,12 +131,12 @@ p {
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding: 15% 10%;
+        padding: 50px 10%;
         background: var(--lightGrayishBlue);
     }
 
     .advantage {
-        margin: 5% 0;
+        margin: 15px 0;
     }
 
     .advantage-desc {
@@ -143,5 +145,39 @@ p {
 
     .advantage-img {
         display: block;
-        margin: 5% auto;
+        margin: 10px auto;
+    }
+
+    /* ------------------- ARTICLES ------------------------ */
+
+    .articles {
+        display: inline-flex;
+        flex-direction: column;
+        padding: 50px 10%;
+        background-color: var(--veryLightGray);
+    }
+
+    .post-img {
+        width: 100%;
+    }
+
+    .post {
+        padding: 10%;
+        background:  var(--white);
+    }
+
+    .author {
+        margin-bottom: 10px;
+        text-align: left;
+        line-height: 150%;
+        font-size: 0.8rem;
+    }
+
+    .text {
+        text-align: left;
+    }
+
+    .articles h3 {
+        margin-top: 0;
+        text-align: left;
     }
