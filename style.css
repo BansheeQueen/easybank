@@ -109,11 +109,14 @@ nav {
     text-align: center;
 }
 
-.nav-mobile a {color: var(--darkBlue);}
+.nav-mobile a {
+    color: var(--darkBlue);
+}
 
 .nav-mobile.active {
     transform: translateX(0) scale(1);
-    transition: ease-in-out 0.8s all;}
+    transition: ease-in-out 0.8s all;
+}
 
  .nav-request-btn  { 
      display: block;
@@ -122,7 +125,9 @@ nav {
     border-radius: 20px;
     color: var(--white);
     min-width: 160px;
-    font-size: 1rem; }
+    font-size: 1rem;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1); 
+ }
 
 
 /* ----------------- Header --------------- */
@@ -158,6 +163,7 @@ nav {
     margin: 30px auto;
     border-radius: 20px;
     color: var(--white);
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1); 
     }
 
     .desc {
@@ -275,6 +281,52 @@ img.footer-logo {
     margin: 5%;
 }
 
+/* -------------- HOVERS --------------------------- */
+button.request-btn:hover, button.nav-request-btn:hover {
+    opacity: 0.6;
+}
+
+.footer-link:hover {
+    color: var(--limeGreen);
+    opacity: 0.8;
+}
+
+.social-container img {
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1); 
+}
+.social-container img:hover {
+    filter: invert(58%) sepia(97%) saturate(402%) hue-rotate(83deg) brightness(200%) contrast(78%);
+    opacity: 0.8;
+}
+
+a.nav-link:hover {
+    color: var(--darkBlue);
+}
+
+a.nav-link:after {
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    content: '';
+    background: linear-gradient( 119deg, var(--limeGreen), var(--brightCyan));
+    width: 0%;
+    height: 5px;
+    border-radius: 4px;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1); 
+}
+
+a.nav-link:hover:after {
+    width: 100%;
+}
+
+.post-title {
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1); 
+}
+
+.post-title:hover {
+    color: var(--limeGreen);
+}
+
 /* -------------- MEDIA QUERIES ----------------- */
 @media screen and (min-width: 1024px) {
     .mobile {
@@ -298,8 +350,10 @@ img.footer-logo {
     }
 
     a.nav-link {
+        position: relative;
         margin: 0 10px;
         color: var(--grayishBlue);
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1); 
     }
 
    
@@ -330,6 +384,7 @@ img.footer-logo {
         padding: 0 5px;
         flex-basis: 40%;
         text-align: left;
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1); 
     }
 
     section.footer-request {
@@ -342,6 +397,8 @@ img.footer-logo {
         margin: 30px 0;
 
 }
+}
+
 
 @media screen and (min-width: 1400px) {
     header {
@@ -368,6 +425,4 @@ img.footer-logo {
     main {
         margin-top: -110px;
     }
-    
-
 }
